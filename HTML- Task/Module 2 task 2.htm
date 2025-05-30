@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <table align="center" border="1" cellpadding="4px">
+            <tr>
+                <td>Full Name :</td>
+                <td><label for="Name"></label><input type="text" placeholder="My name" name="name" required></td>
+            </tr>
+            <tr>
+                <td>Email :</td>
+                <td><label for="email"></label><input type="email" placeholder="example@gmail.com" name="email"></td>
+            </tr>
+            <tr>
+                <td>Phone Number :</td>
+                <td><label for="Mobile Number"></label><input type="text" pattern="[0-9]{10}" title="10 digit only" name="number"></td>
+            </tr>
+            <tr>
+                <td>Subject :</td>
+                  <td><label for="Subject"></label><select id="subject" name="subject">
+                        <option hidden>--Choose Subject--</option>
+                        <option value="">Hindi</option>
+                        <option value="">English</option>
+                        <option value="">Maths</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>Message :</td>
+                <td><label for="Message"></label><textarea rows="8" cols="22" maxlength="40 characters"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right"><button style="background: blue; color: white;">Submit</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
